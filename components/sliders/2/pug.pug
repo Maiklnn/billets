@@ -1,0 +1,23 @@
+- var class_name = 'slider';
+
+section(class=`${class_name}-container`)
+
+	.container
+		div(class=`${class_name} swiper-container`)
+			div(class=`${class_name}__wrapper swiper-wrapper`)
+				mixin item(img)
+					div(class=`${class_name}__slide swiper-slide`)
+						img( src=`${img}` alt=`#`)
+
+
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+				+item('https://images.pexels.com/photos/10370350/pexels-photo-10370350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+
+	div(class=`${class_name}-control`)
+		div(class=`${class_name}-control__inner`)
+			div(class=`slider-control__arr-prev swiper-button-prev`)
+			div(class=`slider-control__arr-next swiper-button-next`)

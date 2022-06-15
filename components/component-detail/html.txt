@@ -1,0 +1,191 @@
+<section class="$NAME$">
+
+    <div class="$NAME$__item" data-detail="1">
+
+        <div class="$NAME$__question" data-question="1">Что делать, если испортится погода за окном?
+            <span></span>
+        </div>
+
+        <div class="$NAME$__answer" data-answer="1">
+            <p>Что может быть лучше мероприятия на природе? Сочетание свежего воздуха с сочным ароматом свежеприготовленного мяса, овощей и закусок на гриле создадут особую атмосферу. Меню отличается оригинальностью и разнообразием: холодные и горячие закуски на шпажках, овощные, сырные, мясные нарезки, мини-салаты и бургеры. Барбекю на природе –это отличная возможность совместить изысканный отдых, спортивные мероприятия и тимбилдинги, деловую встречу или дружескую вечеринку</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+// css
+
+/*====================== default detail ==========================*/
+
+*[data-question] {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 10px;
+}
+
+*[data-question]::after {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border-bottom: 2px solid #ffc852;
+  border-left: 2px solid #ffc852;
+  transform: rotate(-45deg);
+  transform-origin: 25% 65%;
+  transition: 0.3s;
+  content: "";
+}
+
+*[data-answer] {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+*[data-detail].open *[data-question]::after {
+  transform: rotate(135deg);
+}
+
+*[data-detail].open *[data-answer] {
+  height: auto;
+  margin-top: 1.5em;
+  opacity: 1;
+}
+
+/*====================== detail $NAME$ ==========================*/
+
+.$NAME$__item {
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.$NAME$__question {
+  color: #000;
+  font-weight: bold;
+}
+
+.$NAME$__question span {
+  display: block;
+  min-width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.$NAME$__answer {
+  line-height: 24px;
+}
+
+@media (min-width: 75.625em) {
+  .$NAME$__item {
+    padding-top: 1.875rem;
+  }
+
+  .$NAME$__item {
+    padding-bottom: 1.875rem;
+  }
+
+  .$NAME$__item {
+    padding-left: 3.125rem;
+  }
+
+  .$NAME$__item {
+    padding-right: 3.125rem;
+  }
+
+  .$NAME$__question {
+    font-size: 1.125rem;
+  }
+
+  .open .$NAME$__answer {
+    padding-top: 2.75rem;
+  }
+
+  .open .$NAME$__answer {
+    padding-bottom: 5.375rem;
+  }
+}
+
+@media (max-width: 20em) {
+  .$NAME$__item {
+    padding-top: 0.9375rem;
+  }
+
+  .$NAME$__item {
+    padding-bottom: 0.9375rem;
+  }
+
+  .$NAME$__item {
+    padding-left: 0.9375rem;
+  }
+
+  .$NAME$__item {
+    padding-right: 0.9375rem;
+  }
+
+  .$NAME$__question {
+    font-size: 0.875rem;
+  }
+
+  .open .$NAME$__answer {
+    padding-top: 0.9375rem;
+  }
+
+  .open .$NAME$__answer {
+    padding-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 20em) and (max-width: 75.625em) {
+  .$NAME$__item {
+    padding-top: calc(0.9375rem + 0.9375 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .$NAME$__item {
+    padding-bottom: calc(0.9375rem + 0.9375 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .$NAME$__item {
+    padding-left: calc(0.9375rem + 2.1875 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .$NAME$__item {
+    padding-right: calc(0.9375rem + 2.1875 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .$NAME$__question {
+    font-size: calc(0.875rem + 0.25 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .open .$NAME$__answer {
+    padding-top: calc(0.9375rem + 1.8125 * (((100vw - 20rem)) / ((55.625))));
+  }
+
+  .open .$NAME$__answer {
+    padding-bottom: calc(1.875rem + 3.5 * (((100vw - 20rem)) / ((55.625))));
+  }
+}
+
+
+
+// js
+document.addEventListener('click', function (e) {
+	element = e.target;
+	const $detail = element.closest('*[data-detail]')
+	if($detail) {
+		e.preventDefault()
+		if($detail.classList.contains('open')) {
+			$detail.classList.remove('open')
+		} else {
+			const $accordions = document.querySelectorAll('*[data-detail]')
+			for(item of $accordions) {
+				item.classList.remove('open')
+			}
+			$detail.classList.add('open')
+		}
+	}
+})
