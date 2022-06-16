@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+.idea/*
+.vscode
+
+gulp-pack/node_modules/
+gulp-pack/package-lock.json
