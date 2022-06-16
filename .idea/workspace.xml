@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97b5615-ea0b-4177-b942-a13deefc7454" name="Default Changelist" comment="" />
+    <list default="true" id="a97b5615-ea0b-4177-b942-a13deefc7454" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sliders/test/test.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="work" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655359888871</updated>
       <workItem from="1655359890003" duration="898000" />
-      <workItem from="1655360871729" duration="545000" />
+      <workItem from="1655360871729" duration="2082000" />
     </task>
     <servers />
   </component>
@@ -74,5 +78,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="706" y="394" key="NewPhpFileDialog" timestamp="1655361807990">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="706" y="394" key="NewPhpFileDialog/-1600.52.1449.776/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1655361807990" />
+    <state x="462" y="203" key="Vcs.Push.Dialog.v2" timestamp="1655362584146">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="462" y="203" key="Vcs.Push.Dialog.v2/-1600.52.1449.776/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1655362584146" />
   </component>
 </project>
