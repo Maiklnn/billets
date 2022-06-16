@@ -1,3 +1,3 @@
-### Переход на сайт
+### Snipets
 
 > https://maiklnn.github.io/belle/

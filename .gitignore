@@ -3,7 +3,5 @@
 .idea/*
 .vscode
 
-test2.txt
-
 gulp-pack/node_modules/
 gulp-pack/package-lock.json
