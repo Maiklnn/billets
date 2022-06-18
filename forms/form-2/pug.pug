@@ -1,0 +1,20 @@
+ - var class_name = 'form-2'
+
+  section(class=`${class_name}-section`)
+    div(class=`${class_name}-section__container`)
+
+      form(class=`${class_name}`)
+
+        div(class=`${class_name}__title`) Расчитать стимость закза прямо сейчас
+
+        div(class=`${class_name}__inner`)
+
+            .placeholder-container
+              input(class=`placeholder-container__input _necessarily` type=`text` name="nameUser" placeholder=` `)
+              label.placeholder-container__text Телефон
+
+            .placeholder-container
+              input(class=`placeholder-container__input _necessarily` type=`text` name="nameUser" placeholder=` `)
+              label.placeholder-container__text Имя
+
+            div(class=`btn`) Submit
