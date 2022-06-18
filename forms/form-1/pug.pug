@@ -1,0 +1,27 @@
+section(class=`${class_name}-section`)
+    div(class=`${class_name}-section__container`)
+
+      form(class=`${class_name}`)
+
+        div(class=`${class_name}__title`) Оставить заявку на пробную партию
+
+        div(class=`${class_name}__inner`)
+
+          div(class=`${class_name}-grid`)
+            .placeholder-container
+              input(class=`placeholder-container__input _necessarily` type=`text` name="nameUser" placeholder=` `)
+              label.placeholder-container__text петр
+            .placeholder-container
+              input(class=`placeholder-container__input _necessarily` type=`text` name="nameUser" placeholder=` `)
+              label.placeholder-container__text ваша почта
+
+
+          div(class=`${class_name}__grid`)
+            .placeholder-container
+              input(class=`placeholder-container__input _necessarily` type=`text` name="nameUser" placeholder=` `)
+              label.placeholder-container__text ваш телефон
+
+            button(class=`product-form-btn`) Отправть запрос
+
+        div(class=`${class_name}__descr`) Все поля обязательны для заполнения. <br>Нажимая "отправить", Вы подтверждаете согласие на обработку<br>персональных данных
+

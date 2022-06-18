@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.form-1-section {
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+
+/* ============================ form ============================ */
+.form-1 {
+	margin-bottom: 80px;
+	background-color: rgb(79, 94, 131);
+	@include adaptiveValue("padding-top", 70, 20);
+	@include adaptiveValue("padding-bottom", 45, 15);
+	@include adaptiveValue("padding-left", 45, 5);
+	@include adaptiveValue("padding-right", 45, 5);
+
+	&__inner {
+		display: grid;
+		gap: 16px;
+		margin-bottom: 25px;
+		@media screen and (min-width: 1000px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 25px;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		@include adaptiveValue("font-size", 36, 20);
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	&__descr {
+		font-size: 14px;
+		color: rgba(244, 246, 248, 0.51);
+		line-height: 1.2;
+		text-align: center;
+	}
+
+
+
+}
+
+/* ============================ grid-form ============================ */
+
+.form-1-grid {
+}
+
+
+/* ============================ grid-form ============================ */
+
+.form-1-grid {
+
+}
+
+
+// placeholder-container
+.placeholder-container {
+	position: relative;
+	width: 100%;
+	color: #747474;
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	& label {
+		pointer-events: none;
+		position: absolute;
+		transition: all 200ms;
+		top: 50%;
+		left: 30px;
+		transform: translateY(-50%);
+	}
+
+	&__input {
+		border-radius: 7px;
+		border: none;
+		width: 100%;
+		padding: 20px 20px;
+		font-size: 14px;
+		font-family: "Exo2";
+		text-transform: uppercase;
+		line-height: 1.429;
+		&:focus {
+			outline: 0;
+			outline-offset: 0;
+		}
+	}
+
+	& input:focus + label,
+	& input:not(:placeholder-shown) + label{
+		top: -2px;
+		left: 20px;
+		font-size: 14px;
+		background-color: $accent2;
+		padding: 2px 10px;
+		color: #fff;
+	}
+
+}
+
+// product-form-btn
+.product-form-btn {
+	text-align: left;
+	border-radius: 7px;
+	border: none;
+	width: 100%;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-family: "Exo2";
+	text-transform: uppercase;
+	line-height: 1.429;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 1s;
+	background-color: rgb(214, 222, 37);
+	&:focus {
+		outline: 0;
+		outline-offset: 0;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}
