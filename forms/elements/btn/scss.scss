@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+$accent: #f0582c;
+
+.conteiner {
+	max-width: 600px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 35px;
+	cursor: pointer;
+	transition: all 1s;
+	background-color: $accent;
+	line-height: 57px;
+	&:focus {
+		outline: 0;
+		outline-offset: 0;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}

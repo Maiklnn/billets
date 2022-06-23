@@ -1,0 +1,12 @@
+- var class_name = 'select'
+
+.container
+
+	div(class=`${class_name}` id="payer")
+		div(class=`${class_name}__input _necessarily` type = "str" data-type="input" data-id="0" name="payerUser") Способ приобретения
+
+		div(class=`${class_name}__dropdown`)
+			ul(class=`${class_name}__list`)
+				li(class=`${class_name}__item` data-type="item") Прямая продажа
+				li(class=`${class_name}__item` data-type="item") Тендер (аукцион)
+				li(class=`${class_name}__item` data-type="item") Лизинг
