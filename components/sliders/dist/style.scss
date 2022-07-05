@@ -1,0 +1,186 @@
+@use "sass:math";
+
+// Подключение миксинов ===========================================================================================================================================================================================================================================================================
+@import "base/mixins";
+
+// НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
+@import "base/variables";
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+//========================swiper defaul=====================================//
+
+.swiper {
+	&-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-slide {
+		flex-shrink: 0;
+	}
+}
+
+/* arr */
+.swiper-button {
+	&-prev,
+	&-next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-100%);
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+	}
+
+	&-prev {
+		left: 20px;
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+
+	&-next {
+		right: 20px;
+		&:after {
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+//======================== style =====================================//
+
+.main-slider {
+
+	&__container {
+		max-width: 1400px;
+		margin: 100px auto;
+		position: relative;
+
+	}
+
+	// slide
+	&-slide {
+		height: 293px;
+		position: relative;
+		border-radius: 3px;
+		overflow: hidden;
+		text-decoration: none;
+
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&__info {
+			color: #fff;
+			position: relative;
+			padding: 37px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			outline: 1px solid red;
+			font-size: 22px;
+			letter-spacing: .7px;
+			text-transform: uppercase;
+		}
+
+		&__club {
+
+
+		}
+
+		&__site {
+			font-weight: bold;
+			letter-spacing: 0;
+			margin-bottom: 10px;
+		}
+
+		&__address {
+
+		}
+
+		&:hover {
+			img {
+				opacity: 0;
+			}
+			background-color: rgb(255, 119, 46);
+
+		}
+
+	}
+
+	// arr
+	&-button-prev {
+		background: url(https://kiberpride.ru/wp-content/themes/web-nn/assets/img/arrow.png) center center/cover no-repeat;
+		width: 56px;
+		height: 50px;
+		left: -158px;
+	}
+
+	&-button-next {
+		background: url(https://kiberpride.ru/wp-content/themes/web-nn/assets/img/arrow.png) center center/cover no-repeat;
+		width: 56px;
+		height: 50px;
+		transform: translateY(-100%) rotate(-180deg);
+		right: -158px;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

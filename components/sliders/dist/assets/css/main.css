@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+/* arr */
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.7;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-prev::after {
+  transform: rotate(45deg);
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-next:after {
+  transform: rotate(-135deg);
+}
+
+.main-slider__container {
+  max-width: 1400px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.main-slider-slide {
+  height: 293px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.main-slider-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.main-slider-slide__info {
+  color: #fff;
+  position: relative;
+  padding: 37px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid red;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.main-slider-slide__site {
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+
+.main-slider-slide:hover {
+  background-color: rgb(255, 119, 46);
+}
+
+.main-slider-slide:hover img {
+  opacity: 0;
+}
+
+.main-slider-button-prev {
+  background: url(https://kiberpride.ru/wp-content/themes/web-nn/assets/img/arrow.png) center center/cover no-repeat;
+  width: 56px;
+  height: 50px;
+  left: -158px;
+}
+
+.main-slider-button-next {
+  background: url(https://kiberpride.ru/wp-content/themes/web-nn/assets/img/arrow.png) center center/cover no-repeat;
+  width: 56px;
+  height: 50px;
+  transform: translateY(-100%) rotate(-180deg);
+  right: -158px;
+}
+/*# sourceMappingURL=main.css.map */

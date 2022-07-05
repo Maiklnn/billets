@@ -1,0 +1,24 @@
+- var class_name1 = 'main-slider'
+
+div(class=`${class_name1}__container`)
+    div(class=`${class_name1} swiper-container`)
+        div(class=`${class_name1}__wrapper swiper-wrapper`)
+            mixin item(img, title, descr)
+                a(class=`${class_name1}-slide swiper-slide` href = '/')
+                    img(class=`` src=`https://kiberpride.ru/wp-content/uploads/2022/03/ewxyoujsfou.jpg` alt=`#`)
+
+                    div(class=`${class_name1}-slide__info`)
+                        div(class=`${class_name1}-slide__club`) 30 ПК<br>1 VIP - 5ПК
+
+                        div(class=`${class_name1}-slide__address-block`)
+                            div(class=`${class_name1}-slide__site`) Нижний Ноыгород
+                            div(class=`${class_name1}-slide__address`) Красноселье 127
+
+
+            +item('assets/img/home/specification-slider/icon1.png', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+            +item('assets/img/home/specification-slider/icon2.png', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+            +item('assets/img/home/specification-slider/icon3.png', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+            +item('assets/img/home/specification-slider/icon3.png', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+    div(class=`${class_name1}-button-prev swiper-button-prev`)
+    div(class=`${class_name1}-button-next swiper-button-next`)
