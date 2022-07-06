@@ -1,0 +1,29 @@
+.checkbox {
+  position: relative;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
+  cursor: pointer;
+}
+
+.checkbox__label::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  content: "";
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.checkbox__input:checked + .checkbox__label:before {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */
