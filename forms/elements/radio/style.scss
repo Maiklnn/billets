@@ -1,0 +1,32 @@
+.radio {
+	position: relative;
+
+	&__input {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+
+	&__label {
+		cursor: pointer;
+		&::before {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #ccc;
+			content: '';
+			margin-right: 10px;
+			transition: all .3s;
+			border-radius: 50%;
+		}
+	}
+
+	// при checked
+	&__input:checked + &__label:before {
+		background-color: red;
+	}
+
+
+}
+
+

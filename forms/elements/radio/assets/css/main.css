@@ -1,0 +1,30 @@
+.radio {
+  position: relative;
+}
+
+.radio__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.radio__label {
+  cursor: pointer;
+}
+
+.radio__label::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  content: "";
+  margin-right: 10px;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label:before {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */
