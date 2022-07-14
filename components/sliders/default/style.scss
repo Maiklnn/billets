@@ -1,0 +1,154 @@
+
+
+// -------------------------------------------------------swiper default
+
+.swiper {
+	&-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-slide {
+		flex-shrink: 0;
+	}
+}
+
+
+
+// pagination default
+.swiper-pagination {
+	position: absolute;
+	text-align: center;
+	transition: .3s opacity;
+	z-index: 10;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&-bullet {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 15px;
+		background-color: red;
+		opacity: 1;
+		cursor: pointer;
+		border-radius: 100%;
+	}
+
+	&-bullet:hover {
+		opacity: .7;
+	}
+
+	&-bullet-active {
+		background-color: red;
+	}
+
+}
+
+// arr default
+.swiper-button {
+	&-prev,
+	&-next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&::after {
+			display: block;
+			width: 14px;
+			height: 14px;
+			border-bottom: 2px solid red;
+			border-left: 2px solid red;
+			transition: 0.3s;
+			content: '';
+		}
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+	}
+
+	&-prev {
+		left: 20px;
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+
+	&-next {
+		right: 20px;
+		&:after {
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+
+// --------------------------------------------------------custom slider
+
+.advantages-list-slider {
+	margin: 100px auto;
+	max-width: 1200px;
+	// padding-bottom: 60px; // если нужно паганацию отодвинуть вниз
+
+	// slide
+	&-slide {
+		min-height: 100px;
+		background-color: green;
+		text-align: center;
+	}
+
+	// pagination
+	&-pagination {
+		.swiper-pagination-bullet {
+				background-color: #1b4da9;
+		}
+		.swiper-pagination-bullet-active {
+			background-color: red;
+		}
+	}
+
+	// arr
+
+	// убираем по умолчанию
+	.swiper-button-prev::after, .swiper-button-next::after {
+		display: none;
+	}
+
+	// стили стрелок
+	&-button-prev, &-button-next {
+		background-color: #1b4da9;
+
+		// если далее нету слайдов
+		&.swiper-button-disabled,
+		&.swiper-button-disabled {
+			background-color: red;
+			pointer-events: none;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
