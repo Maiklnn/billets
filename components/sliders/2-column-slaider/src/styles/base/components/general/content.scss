@@ -1,0 +1,25 @@
+.content {
+	padding-top: 30px;
+	@include adaptiveValue("margin-bottom", 70, 30);
+	h2 {
+		@include adaptiveValue("margin-bottom", 50, 20);
+	}
+	p {
+		margin-bottom: em(30, 23)
+	}
+	li {
+		display: flex;
+		align-items: center;
+		position: relative;
+		@include adaptiveValue("margin-bottom", 30, 15);
+		&::before {
+			@include adaptiveValue("margin-right", 31, 15);
+			@include adaptiveValue("min-width", 31, 10);
+			@include adaptiveValue("height", 31, 10);
+			border-radius: 100%;
+			background: linear-gradient(180deg, rgba(187,8,52,1) 0%, rgba(229,152,74,1) 100%);
+			content: '';
+		}
+	}
+
+}

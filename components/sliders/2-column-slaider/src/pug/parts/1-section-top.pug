@@ -1,0 +1,45 @@
+- var class_name = 'gelatin-window'
+
+section(class=`${class_name}`)
+
+	div(class=`${class_name}__container`)
+		//-- grid-top
+		div(class=`${class_name}__grid`)
+
+			//-- slider
+			div(class=`${class_name}-slaider`)
+
+				- var class_name = 'advantages-list-slider'
+				div(class=`${class_name} swiper-container`)
+					div(class=`${class_name}__wrapper swiper-wrapper`)
+						mixin item(img, title, descr)
+							div(class=`${class_name}-slide swiper-slide`)
+								img(class=`` src=`${img}` alt=`#`)
+
+
+
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '4 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '5 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '6 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+						+item('https://alfa52.ru/userfls/bs/mark1273_131.jpg', '7 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+					div(class=`${class_name}-pagination swiper-pagination`)
+
+					div(class=`${class_name}-navigation`)
+						div(class=`${class_name}-button-prev swiper-button-prev`)
+						div(class=`${class_name}-button-next swiper-button-next`)
+
+
+
+			//- description
+			div(class=`${class_name}-descr`) Правый блок
+
+
+
+
+
+
+

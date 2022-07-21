@@ -1,0 +1,14 @@
+.logo {
+	@include adaptiveValue("font-size", 24, 16);
+	font-weight: bold;
+	color: #fff;
+	@include adaptiveValue("margin-right", 200, 10, 1920, 1300, 1);
+	&::after {
+		display: inline-block;
+		@include adaptiveValue("width", 110, 80);
+		height: 17px;
+		background-color: $accent2;
+		content: '';
+		margin-left: 10px;
+	}
+}

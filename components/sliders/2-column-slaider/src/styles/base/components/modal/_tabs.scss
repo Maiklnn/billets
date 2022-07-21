@@ -1,0 +1,19 @@
+.tab__content {
+  height: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+.tab__content--active {
+  height: auto;
+  opacity: 1;
+}
+
+.events, .media-material {
+  .tab__content {
+    overflow: hidden;
+  }
+
+  .tab__content--active {
+    overflow: visible;
+  }
+}

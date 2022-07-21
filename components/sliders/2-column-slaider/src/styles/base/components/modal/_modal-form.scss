@@ -1,0 +1,81 @@
+input._error {
+    box-shadow: 0 0 15px red;
+}
+
+
+
+
+
+
+.overlay {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: none;
+    .popup__cont {
+        display: inline-block;
+        padding: 4px;
+        overflow-y: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid $light;
+        color: #000;
+        .popup__inner {
+            width: 100%;
+            height: 100%;
+            background-color: $light;
+            position: relative;
+            padding: 0 52px 52px 52px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            // заголовок
+            .popup__title {
+                font-size: px-to-em(22px);
+                text-align: center;
+                padding: 55px 0 30px 0;
+            }
+            // описаине
+            .popup__descr {
+                padding-bottom: 10px;
+            }
+            // input
+            .popup__box-input {
+                margin-bottom: 15px;
+                input._error {
+                    box-shadow: 0 0 15px red;
+                    outline: 1px solid red;
+                }
+                li._error {
+                    padding: 5px 0 5px 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    // модальное окно картинок
+
+
+    // крестие справа
+    .popup__close {
+        position: absolute;
+        color: $link-color;
+        font-size: px-to-em(38px);
+        font-weight: bold;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+        &:hover {
+            color: darken($link-color, 25%);
+            text-shadow: $shadow;
+            transition: all 0.7s;
+        }
+    }
+}
