@@ -1,0 +1,62 @@
+- var class_name = 'products-main'
+
+div(class=`${class_name}`)
+    div(class=`${class_name}__grid-top`)
+        div(class=`new-title`) Бетон М 150 (В 12,5)
+        div(class=`${class_name}__icon`)
+            img(src=`assets/img/icon/!.png` alt=`#`)
+
+    div(class=`${class_name}__grid`)
+        // картинка
+        div(class=`${class_name}-img`)
+            img(class=`${class_name}-img__img` src=`assets/img/product/product.jpg` alt=`#`)
+
+            div(class=`${class_name}-img__info`)
+                div(class=`${class_name}-img__info-item`) Для строительства
+                div(class=`${class_name}-img__info-item`) М-150
+
+
+
+
+
+        div(class=`${class_name}-info`)
+
+            // Характеристики
+            div(class=`${class_name}-specification`)
+                div(class=`${class_name}-specification__title`) Характеристики
+
+                div(class=`${class_name}-specification__item`)
+                    div(class=`${class_name}-specification__descr`) Длина, мм
+                    div(class=`${class_name}-specification__price`) 1810
+
+                div(class=`${class_name}-specification__item`)
+                    div(class=`${class_name}-specification__descr`) Ширина, мм
+                    div(class=`${class_name}-specification__price`) 1810
+
+                div(class=`${class_name}-specification__item`)
+                    div(class=`${class_name}-specification__descr`) Высота, мм
+                    div(class=`${class_name}-specification__price`) 1810
+
+            // Цена
+            div(class=`${class_name}-price`)
+                div(class=`${class_name}-price__name`) Цена
+                div(class=`${class_name}-price__num`) <span>3100</span> руб
+
+            // stepper
+            div.stepper-block
+
+                - var class_name = 'stepper';
+
+                div(class=`${class_name}`)
+
+                    button(class=`${class_name}__btn ${class_name}__btn--down ${class_name}__btn--disabled` aria-label="Уменьшить количество")
+
+                    label(class=`${class_name}__field`)
+                        input(class=`${class_name}__input` type=`text` value=`1` maxlength=`3`)
+
+                    button(class=`${class_name}__btn ${class_name}__btn--up` aria-label="Увеличить количество")
+
+
+                div(class=`btn`) В корзину
+
+

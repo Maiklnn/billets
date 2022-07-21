@@ -1,0 +1,245 @@
+// НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
+@import "base/settings";
+
+
+
+.products-main {
+	// вспомогательные
+	max-width: 800px;
+	margin: 20px auto;
+
+	padding-bottom: 50px;
+
+	&__subtitle-grid {
+		display: flex;
+	}
+
+	&__grid-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 38px;
+	}
+
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 362px 1fr;
+		gap: 30px;
+		@media screen and (max-width: 1100px) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+	}
+}
+
+
+// ========================== left grid img
+.products-main-img {
+	max-width: 382px;
+	max-height: 333px;
+	position: relative;
+	border-radius: 10px;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	&__info {
+		position: absolute;
+		left: -10px;
+		bottom: 8px;
+	}
+	&__info-item {
+		padding: 10px 5px 10px 30px;
+		min-width: 265px;
+		border-radius: 10px;
+		color: #fff;
+		background-color: rgb(233, 20, 20);
+	}
+
+	&__info-item:not(:last-child) {
+		background-color: rgb(135, 135, 135);
+		margin-bottom: 6px;
+	}
+
+}
+
+
+// ========================== right grid info
+.products-main-info {
+	padding: 30px 40px 40px 35px;
+	background-color: #FBFBFB;
+	border-radius: 10px;
+}
+
+// specification
+.products-main-specification {
+	padding-bottom: 30px;
+	font-size: 18px;
+	color: #444;
+
+	&__title {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		color: #a8a8a8;
+		font-weight: 600;
+		font-size: 14px;
+
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		position: relative;
+		&::before {
+			position: absolute;
+			z-index: 0;
+			bottom: 5px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: url("src/assets/img/line.jpg");
+			content: '';
+		}
+
+	}
+
+	&__descr {
+		position: relative;
+		background-color: white;
+		padding-right: 5px;
+
+	}
+
+	&__price {
+		position: relative;
+		background-color: white;
+		padding-left: 5px;
+		color: #000;
+
+	}
+}
+
+// price
+.products-main-price {
+	padding-bottom: 15px;
+	&__name {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		color: #a8a8a8;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	&__num {
+		@include adaptiveValue("font-size", 30, 20);
+		color: #d9181d;
+		font-weight: 700;
+	}
+}
+
+// stepper
+.stepper-block {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	.btn {
+		padding: 18px 25px;
+		max-width: 200px;
+		width: 100%;
+		text-align: center;
+		color: rgb(233, 20, 20);
+		font-size: 18px;
+		font-weight: 600px;
+
+		border: 2px solid rgb(233, 20, 20);
+		border-radius: 30px;
+		cursor: pointer;
+		transition: all 1s;
+		&:hover {
+			opacity: .8;
+			box-shadow: 7px 7px 10px rgba(0,0,0,.3);
+		}
+	}
+	@media(max-width: 1150px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+}
+
+.stepper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 135px;
+	user-select: none;
+
+
+	// поле
+	&__field {
+		overflow: hidden;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+	}
+
+	// input
+	&__input {
+		border: none;
+		text-align: center;
+		width: 10px;
+		background-color: inherit;
+		height: 100%;
+
+		outline: none;
+		font-weight: 700;
+		min-width: 2ex;
+		font-size: 18px;
+		color: #767676;
+	}
+
+	&__text {
+
+	}
+
+	// кнопки
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		cursor: pointer;
+		border-radius: 50%;
+		box-shadow: 0 0 20.16px 3.84px rgba(162, 162, 162, 0.22);
+
+		&--up {
+			background: url("../gulp-pack/src/assets/images/icon/plus.png") center no-repeat;
+		}
+
+		&--down {
+			background: url("../gulp-pack/src/assets/images/icon/minus.png") center no-repeat;
+		}
+	}
+
+	&__btn--disabled {
+		// opacity: 0.5;
+		pointer-events: none;
+	}
+
+}
+
+
+
+
+
+
+
