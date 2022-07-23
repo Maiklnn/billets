@@ -1,0 +1,127 @@
+$origin: 135deg;
+$color1: #5335cf;
+$color2: red;
+$color3: #f66e48;
+
+$box_h: 200px;
+$view_h: $box_h * 10;
+
+$duration: 5s;
+
+.box {
+	height: $box_h;
+	width: $box_h;
+	overflow: hidden;
+	border-radius: 35px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -$box_h/2;
+	margin-left: -$box_h/2;
+	animation: animate-box $duration*2  infinite  alternate;
+	&::before {
+		display: block;
+	    position: relative;
+	    top: 0;
+		left: 0;
+		width: 100%;
+		height: $view_h;
+		background: linear-gradient($origin, $color1 0%, $color2 25%, $color3 50%, $color2 75%, $color1 100%);
+		animation: animate-bg $duration*2  infinite  linear;
+		content: '';
+	}
+}
+
+.logo {
+
+	& > div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border: #fff 9px solid;
+		z-index: 2;
+	}
+
+	&__border {
+		width: 74%;
+		height: 74%;
+		border-radius: 35px;
+		margin-top: -37%;
+		margin-left: -37%;
+		animation: animate-border $duration  infinite  alternate;
+	}
+
+	&__circle {
+		width: 48%;
+		height: 48%;
+		border-radius: 10em;
+		margin-top: -24%;
+		margin-left: -24%;
+	}
+
+	&__dot {
+
+	}
+}
+
+@keyframes animate-bg {
+	0% {
+		top: 0;
+	}
+	50% {
+		top: $box_h - $view_h;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes animate-box {
+	0% {
+		transform: scale(0);
+		border-radius: 35px;
+	}
+	2.5% {
+		transform: scale(1.1);
+		border-radius: 10em;
+	}
+	5% {
+		transform: scale(1);
+		border-radius: 35px;
+	}
+	96% {
+		transform: scale(1);
+		border-radius: 35px;
+	}
+	98% {
+		transform: scale(1.1);
+		border-radius: 10em;
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes animate-border {
+	0% {
+		transform: scale(0);
+		border-radius: 10em;
+		opacity: 0;
+	}
+	2% {
+		transform: scale(1.1);
+		border-radius: 10em;
+		opacity: 0;
+	}
+	18% {
+		transform: scale(1);
+		border-radius: 35px;
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1);
+		border-radius: 35px;
+	}
+
+}
+

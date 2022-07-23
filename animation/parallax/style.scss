@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// картинки https://unsplash.com/
+
+.section1 {
+	background: url("https://images.unsplash.com/photo-1657299156594-50426d5125a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat center;
+}
+
+.section2 {
+	background: url("https://images.unsplash.com/photo-1658496594141-589b0ec66b8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80") no-repeat center;
+}
+
+.paralax {
+	background-attachment: fixed;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&::before {
+	    position: absolute;
+	    top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: .4;
+		content: '';
+
+	}
+
+	h1 {
+		position: relative;
+		color: #fff;
+		font-size: 70px;
+	}
+}
+
+
+
+
+
+
+
+.page-content {
+	height: 500px;
+}

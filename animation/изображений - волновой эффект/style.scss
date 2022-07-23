@@ -1,0 +1,48 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: flex;
+	height: 100vh;
+	position: relative;
+}
+
+.main {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("https://image.shutterstock.com/image-photo/group-people-making-plans-together-600w-1934016128.jpg") no-repeat center;
+	background-size: cover;
+	z-index: 3;
+}
+
+.main__title {
+	color: #fff;
+	font-size: 52px;
+}
+
+.overlay {
+	width: 2%;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+	transition: 2s linear;
+	background: url("https://image.shutterstock.com/shutterstock/photos/137709527/display_1500/stock-photo-woman-working-on-her-laptop-in-the-office-137709527.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+	&:hover {
+		opacity: 0;
+		transition: 0s linear;
+	}
+}
