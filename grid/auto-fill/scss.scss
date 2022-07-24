@@ -1,52 +1,26 @@
-/* =================== news =========================== */
+// section
 
-.news {
-	border-top: 2px solid #ddd;
-	background-color: white;
-	padding-top: 100px;
-	margin-bottom: 80px;
+.products {
 
 	&__container {
-		max-width: 1600px;
-		margin: 0 auto;
-		padding-left: 0.9375rem;
-		padding-right: 0.9375rem;
-	}
 
-	&__title {
-		text-transform: uppercase;
-		@include adaptiveValue("font-size", 36, 20);
-		font-weight: 500;
-		margin-bottom: 40px;
-		span {
-			color: #a7aec1;
-		}
 	}
 
 	&__list {
+		display: grid;
+		gap: 35px 50px;
 		@media screen and (min-width: 510px) {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-			gap: 35px 50px;
+			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 		}
 	}
 }
 
-/* ===================item=========================== */
+// item
 
-.item-news {
-	background-color: #f5f6f7;
-	// padding: 60px 32px 60px 0;
-	//display: grid;
-	// gap: 5px;
-	@include adaptiveValue("font-size", 20, 16);
-	border-radius: 8px;
+.item-products {
+
 	transition: all 1s;
 	cursor: pointer;
-	//@media screen and (min-width: 570px) {
-	//	grid-template-columns: 136px 1fr;
-	//}
-
 	&:hover {
 		box-shadow: 0 0 18px 0 rgba(0, 1, 1, 0.19);
 	}
@@ -56,29 +30,17 @@
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
+
 		img {
-			max-height: 100%;
-			max-width: 100%;
+			object-fit: cover;
 			transition: all 1s;
+			max-width: 100%;
+			max-height: 100%;
 			&:hover {
 				transform: scale(1.2);
 			}
 		}
 
-	}
-
-	&__info {
-		padding: 20px 5px;
-	}
-
-	&__name {
-		font-weight: bold;
-	}
-
-	&__date {
-		margin-bottom: 15px;
-		color: #7D7E80;
-		line-height: 1.5;
 	}
 
 }
