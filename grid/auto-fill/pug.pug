@@ -1,24 +1,21 @@
-- var class_name = 'news'
+- var class_name = 'products'
 
 section(class=`${class_name}`)
 	div(class=`${class_name}__container`)
 
-		div(class=`${class_name}__title`) <span>преимущества</span> полиэтиленового воска
-
 		div(class=`${class_name}__list`)
-			mixin item(name,img,descr)
+			mixin item(name,img)
 
 				div(class=`item-${class_name}`)
 
 					div(class=`item-${class_name}__img`)
-						img(src=`https://kremlnn.ru/assets/News/Arh.jpg` alt=`#`)
+						img(src=`${img}` alt=`#`)
+
 					div(class=`item-${class_name}__info`)
-						div(class=`item-${class_name}__date`)= descr
 						div(class=`item-${class_name}__name`)= name
 
 
-			+item('В Еловом сквере откроется детский павильон с летней верандой Губернского кафе','1-icon.png','07/06/22')
-			+item('В Еловом сквере откроется детский павильон с летней верандой Губернского кафе','1-icon.png','07/06/22')
-			+item('В Еловом сквере откроется детский павильон с летней верандой Губернского кафе','1-icon.png','07/06/22')
-			+item('В Еловом сквере откроется детский павильон с летней верандой Губернского кафе','1-icon.png','07/06/22')
-			+item('В Еловом сквере откроется детский павильон с летней верандой Губернского кафе','1-icon.png','07/06/22')
+			+item('Описание','https://images.unsplash.com/photo-1657299156594-50426d5125a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+			+item('Описание','https://images.unsplash.com/photo-1657299156594-50426d5125a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+			+item('Описание','https://images.unsplash.com/photo-1657299156594-50426d5125a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+			+item('Описание','https://images.unsplash.com/photo-1657299156594-50426d5125a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
