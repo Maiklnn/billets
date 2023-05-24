@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="72635919-a886-4c20-b070-fca23fea322e" name="Default Changelist" comment="" />
+    <list default="true" id="72635919-a886-4c20-b070-fca23fea322e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/1/pug.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/1/screnn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/1/scss.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/2/Screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/2/pug.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/2/scss.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/default/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/default/pug.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-components/tab/default/scss.scss" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,11 +127,23 @@
       <workItem from="1683876812270" duration="574000" />
       <workItem from="1684751370108" duration="10451000" />
       <workItem from="1684919950274" duration="4075000" />
+      <workItem from="1684929259869" duration="550000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1681214087025">

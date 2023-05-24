@@ -1,26 +1,36 @@
 .tab {
-	&__nav {
+    &__nav {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        @media(max-width: 700px) {
+            flex-direction: column;
+        }
+    }
 
-	}
+    &__link:hover {
+        opacity: .7
+    }
 
-	&__link:hover {
-		opacity: .7
-	}
+    &__link--active {
+        color: $accent;
+        text-decoration: underline;
+    }
 
-	&__link--active {
-		color: $accent;
-	}
-	&__content-item {
-		height: 0;
-		opacity: 0;
-		overflow: hidden;
-		transition: all 1s
-	}
+    &__content-item {
+        transform: rotateX(-90deg);
+        transform-origin: 0 0;
+        transition: transform 1s linear;
+        overflow: hidden;
+        height: 0;
+    }
 
-	&__content-item--active {
-		height: auto;
-		opacity: 1;
-		overflow: visible
-	}
+    &__content-item--active {
+        transform: rotateX(0);
+        opacity: 1;
+        overflow: visible;
+        height: auto;
+
+    }
 
 }

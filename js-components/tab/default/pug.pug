@@ -1,23 +1,31 @@
 - var class_name = 'main-tab'
 section(class=`${class_name}`)
-    div(class=`${class_name}__container`)
 
-        div(class=`title`) Популярные модели деревянных окон
+    div(class=`tab container`)
+        //- ссылки
+        div(class=`${class_name}__nav tab__nav`)
+            a(class=`${class_name}__link tab__link tab__link--active` data-tab_link = '1' href = '#') Описание
+            a(class=`${class_name}__link tab__link` data-tab_link = '2' href = '#') Характеристики
+            a(class=`${class_name}__link tab__link` data-tab_link = '3' href = '#') Комплектация
 
-        div(class=`tab`)
+        //- контент первого таба
+        div(class=`tab__content-item ` data-tab_content = '1' data-da="main-tab__nav, 1, 991")
+            .shop_text
+                p
+                    strong Описание
+                p Предназначен для установки на газонах, тротуарах и на проезжей части улиц и автомагистралей в качестве проходного, углового или разветвительного колодца (<a href="https://www.ssd.ru/upload/iblock/b75/p9z3x4x71ssti2aqzpajx1fy228t7aar/rekomen_po_viboru_kol_kks.pdf" target="_blank">рекомендации по выбору колодцев для проектирования и строительства</a>). Для построения кабельной канализации применяется только совместно со спиральной трубой производства «СВЯЗЬСТРОЙДЕТАЛЬ», формируя систему кабельной канализации ССД-Пайп.
 
-            div(class=`${class_name}__nav tab__nav`)
-                a(class=`${class_name}__link tab__link tab__link--active` href = '#') 1
-                a(class=`${class_name}__link tab__link` href = '#') 2
-                a(class=`${class_name}__link tab__link` href = '#') 3
+        //- контент второго таба
+        div(class=`tab__content-item tab__content-item` data-tab_content = '2' data-da="main-tab__nav, 2, 991")
+            .shop_text
+                p
+                    strong Характеристики
+                p Предназначен для установки на газонах, тротуарах и на проезжей части улиц и автомагистралей в качестве проходного, углового или разветвительного колодца (<a href="https://www.ssd.ru/upload/iblock/b75/p9z3x4x71ssti2aqzpajx1fy228t7aar/rekomen_po_viboru_kol_kks.pdf" target="_blank">рекомендации по выбору колодцев для проектирования и строительства</a>). Для построения кабельной канализации применяется только совместно со спиральной трубой производства «СВЯЗЬСТРОЙДЕТАЛЬ», формируя систему кабельной канализации ССД-Пайп.
 
-            //- tabs__content
-            div(class=`${class_name}__content tabs__content` )
-
-                //- контент первого таба
-                div(class=`tab__content-item tab__content-item--active`) 1
-
-                div(class=`tab__content-item tab__content-item`) 2
-
-                div(class=`tab__content-item tab__content-item`) 3
+        //- контент третьего таба
+        div(class=`tab__content-item tab__content-item tab__content-item--active` data-tab_content = '3' data-da="main-tab__nav, 3, 991")
+            .shop_text
+                p
+                    strong Комплектация
+                p Предназначен для установки на газонах, тротуарах и на проезжей части улиц и автомагистралей в качестве проходного, углового или разветвительного колодца (<a href="https://www.ssd.ru/upload/iblock/b75/p9z3x4x71ssti2aqzpajx1fy228t7aar/rekomen_po_viboru_kol_kks.pdf" target="_blank">рекомендации по выбору колодцев для проектирования и строительства</a>). Для построения кабельной канализации применяется только совместно со спиральной трубой производства «СВЯЗЬСТРОЙДЕТАЛЬ», формируя систему кабельной канализации ССД-Пайп.
 
