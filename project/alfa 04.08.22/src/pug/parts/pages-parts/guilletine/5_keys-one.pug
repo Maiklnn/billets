@@ -1,0 +1,39 @@
+- var class_name = 'keys-one'
+
+section(class=`${class_name}`)
+    div(class=`${class_name}__subtitle`) Наши проекты
+    div(class=`${class_name}__title`) Ресторан "Волконский", Нижний Новгород
+
+
+    //-- container
+    div(class=`${class_name}__container`)
+
+
+
+        //-- grid-top
+        div(class=`${class_name}__grid`)
+
+            //-- slider project
+            div(class=`${class_name}-img sliders-keys swiper-container`)
+                div(class=`${class_name}__wrapper swiper-wrapper`)
+
+                    mixin item(img, title, descr)
+                        div(class=`${class_name}-img-slide swiper-slide`)
+                            img(class=`${class_name}-img__img` src=`/assets/img/window-gilotine/keys1.jpg` alt=`#`)
+                            div(class=`${class_name}-img__info`)
+                                div(class=`${class_name}-img__text`) А звуки и запахи вкусной выпечки привлекают проходящих по улице людей
+
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '', '')
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '', '')
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '', '')
+
+
+            //- description
+            div(class=`${class_name}-descr`)
+                div(class=`${class_name}-descr__top`)
+                    h3 Идея
+                    p Идея заказчика была в том, чтобы люди, проходя мимо ресторана, могли попить кофе, не заходя в ресторан. Для этого были организованы посадочные места с подушками на подоконнике, а поднятое вверх окно образует открытый проем <br> При открытых окнах гости ресторана чувствуют себя как на открытой веранде
+
+                div(class=`${class_name}-descr__bottom`)
+                    h3 Реолизация
+                    p <strong> Открываются и закрываются окна с кнопки, их можно закрыть как все одновременно,</strong> так и по отдельности Благодаря таким окнам, летом в этом ресторане не бывает пусто, и места снаружи на подоконниках тоже всегда заняты Зимой окна закрыты, благодаря мультифункциональному стеклопакету, гости рядом с окном не мерзнут. Конечно же, под окном предусмотрено отопление.

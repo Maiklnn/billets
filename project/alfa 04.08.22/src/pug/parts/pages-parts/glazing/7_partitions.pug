@@ -1,0 +1,40 @@
+- var class_name = 'gelatin-window'
+a(name=`three`)
+section(class=`${class_name} ${class_name}--left-descr`)
+        //-- grid-top
+        div(class=`${class_name}__grid ${class_name}__grid--10001fr`)
+
+            //- description
+            div(class=`${class_name}-descr ${class_name}-descr--left`)
+                div(class=`${class_name}-descr__title`) Цельностеклянная перегородка
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 9.8 мм
+                    div(class=`${class_name}-descr__item-descr`) <strong>Пространство пола без помех -</strong> заниженный нижний направляющий профиль от 9,8 мм, возможность заглубленного монтажа направляющих профилей
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 8, 10 <br> 12 мм
+                    div(class=`${class_name}-descr__item-descr`) <strong>Звысота панели до 3100 мм, стекло закаленное<br> 8,10,12 мм</strong>
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 500 <br> 1 000
+                    div(class=`${class_name}-descr__item-descr`) <strong>Легко и безопасно пользоваться - <br> ширина панели 500-1000 мм</strong>
+
+                a(class=`${class_name}-descr__link ${class_name}-descr__link--left` href = '#form') Заказать расчёт
+
+            //-- slider
+            div(class=`${class_name}-slaider`)
+                - var class_name1 = 'partition-slider'
+                div(class=`${class_name1} swiper-container`)
+                    div(class=`${class_name1}__wrapper swiper-wrapper`)
+                        mixin item(img, title, descr)
+                            div(class=`${class_name1}-slide swiper-slide`)
+                                img(class=`` src=`${img}` alt=`#`)
+
+                        +item('/assets/img/page2/partitionals.jpg', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/page2/partitionals.jpg', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/page2/partitionals.jpg', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+
+div(class=`${class_name}__decor`)
+    span

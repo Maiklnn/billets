@@ -1,0 +1,20 @@
+
+// 1fr 1fr
+[class*="--1fr1fr"] {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// 1fr 671
+[class*="--1fr671"] {
+  display: grid;
+  grid-template-columns: 1fr percent(671, $containerWidth);
+  gap: 10px;
+}
+
+
+

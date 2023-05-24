@@ -1,0 +1,23 @@
+// ряд 5 новости
+&-row5 {
+	&__container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		@media (max-width: 1050px) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+	}
+
+	// левая колонка
+	&-left {
+
+	}
+
+	// правая колонка
+	&-right {
+
+	}
+
+
+}

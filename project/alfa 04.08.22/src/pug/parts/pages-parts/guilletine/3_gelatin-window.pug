@@ -1,0 +1,35 @@
+- var class_name = 'gelatin-window'
+
+section(class=`${class_name}`)
+        //-- grid-top
+        div(class=`${class_name}__grid`)
+
+            //-- slider
+            div(class=`${class_name}-slaider`)
+                - var class_name1 = 'advantages-list-slider'
+                div(class=`${class_name1} swiper-container`)
+                    div(class=`${class_name1}__wrapper swiper-wrapper`)
+                        mixin item(img, title, descr)
+                            div(class=`${class_name1}-slide swiper-slide`)
+                                img(class=`` src=`${img}` alt=`#`)
+
+                        +item('/assets/img/window-gilotine/window-gilotine.jpg', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/window-gilotine/window-gilotine.jpg', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/window-gilotine/window-gilotine.jpg', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+
+            //- description
+            div(class=`${class_name}-descr`)
+                div(class=`${class_name}-descr__title`) Окно-гильотина
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 2,3,4
+                    div(class=`${class_name}-descr__item-descr`) <strong>2,3 или 4 горизонтальных панели.</strong> Створки поднимаются и опускаются с помощью электропривода и цепи/ремня.
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 8 и <br> 20 мм
+                    div(class=`${class_name}-descr__item-descr`) Закаленное стекло <span>8 мм</span> или стеклопакет однокамерный закаленный <span>20 мм</span>
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 4 400 <br> 3 500
+                    div(class=`${class_name}-descr__item-descr`) <strong>Максимальная ширина - 4400 мм</strong><br><strong>максимальная высота - 3500 мм</strong>

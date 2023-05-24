@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-family: 'StratosLCWeb';
+  color: #2C353C;
+  @include adaptiveValue("margin-bottom", 25, 10);
+  @include adaptiveValue("font-size", 22, 15);
+
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

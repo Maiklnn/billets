@@ -1,0 +1,23 @@
+// custom шрифт
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src:
+				url(#{$path}.woff) format("woff"),
+				url(#{$path}.woff2) format("woff2");
+		font-weight: $weight;
+		font-display: swap;
+		font-style: $style;
+	}
+}
+// @include font-face('MyriadPro', '../fonts/MyriadPro-Semibold', 600, 'normal');
+
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600&display=swap");
+
+
+$font-family: 'Open Sans';
+$font-weight: 400;
+$font-size: 16px;
+$font-color: #000;
+$line-height: 30px;

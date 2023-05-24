@@ -1,0 +1,38 @@
+// сброс отступов
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// подключение шрифта =============================
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src:
+				url(#{$path}.woff) format("woff"),
+				url(#{$path}.woff2) format("woff2"),
+				url(#{$path}.ttf) format("truetype");
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+// @include font-face('helvetica_regular', '../fonts/Haettenschweiler', 400, 'normal');
+
+// body
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*
+(i) Стили будут применяться ко
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+[class*="__container"] {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0;
+}

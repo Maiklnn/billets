@@ -1,0 +1,72 @@
+// основной блок
+.types-panels {
+	margin-bottom: 155px;
+
+	&__container {
+		@media screen and (max-width: 900px) {
+			padding: 0 15px ;
+		}
+	}
+
+	// заголовок
+	&__title {
+		margin-bottom: 40px;
+		color: #22528b;
+		@include adaptiveValue("font-size", 36, 18);
+		font-weight: bold;
+	}
+
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 505px 1fr;
+		gap: 77px;
+
+
+		@media screen and (max-width: 900px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+// Блок desription
+.types-panels-descr {
+		p {
+			max-width: 450px;
+			line-height: 24px;
+			font-weight: 600;
+			span {
+				text-transform: uppercase;
+			}
+		}
+
+		&__top {
+			padding: 45px 35px 70px 35px;
+			background-color: #EDEDED;
+			margin-bottom: 15px;
+
+
+
+		}
+
+		&__bottom {
+			padding: 50px 35px 80px 35px;
+			background-color: #dee5ef;
+			font-weight: 600;
+			color: #22528b;
+		}
+
+
+}
+
+// Блок c картинкой
+.types-panels {
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+	}
+
+}
+

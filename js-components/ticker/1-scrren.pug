@@ -1,0 +1,10 @@
+- var class_name = 'ticker'
+section(class=`${class_name}`)
+	div(class=`${class_name}__wrapper`)
+
+		mixin item(text)
+			div(class=`${class_name}__item`)= text
+
+		+item('Поздравляем вас с Новым годом! Принимаем ваши заявки в праздники и сможем ответить вам с 9 января 2023 года')
+		+item('Поздравляем вас с Новым годом! Принимаем ваши заявки в праздники и сможем ответить вам с 9 января 2023 года')
+

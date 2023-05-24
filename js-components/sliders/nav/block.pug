@@ -1,0 +1,32 @@
+//- name-slider
+- var class_slider = 'presentation-slider'
+
+section(class='main-video')
+    div(class='main-video__block')
+
+        div(class='slider-nav')
+            div(class='swiper-wrapper')
+                div(class='slider-nav-slide swiper-slide')
+                    img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+                div(class='slider-nav-slide swiper-slide')
+                    img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+                div(class='slider-nav-slide swiper-slide')
+                    img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+                div(class='slider-nav-slide swiper-slide')
+                    img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+                div(class='slider-nav-slide swiper-slide')
+                    img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+
+
+        div(class=`${class_slider} swiper-container`)
+            div(class=`${class_slider}__wrapper swiper-wrapper`)
+                mixin item(img)
+                    div(class=`${class_slider}-slide swiper-slide`)
+                        img(src='https://arbor-nn.ru/wp-content/themes/arbor-nn/img/2.jpg' alt = '')
+
+                +item('1', '', '')
+                +item('2', '', '')
+                +item('3', '', '')
+                +item('4', '', '')
+                +item('5', '', '')
+                +item('6', '', '')

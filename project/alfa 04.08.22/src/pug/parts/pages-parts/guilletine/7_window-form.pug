@@ -1,0 +1,44 @@
+- var class_name = 'window-form'
+a(name=`form`)
+section(class=`${class_name}`)
+
+        // grid-top
+        div(class=`${class_name}__grid`)
+
+
+            // form
+            form(class=`${class_name}-form`)
+                  div(class=`${class_name}-form__title`) Отправить заявку нам<br> на консультацию и полный расчет
+                  div(class=`${class_name}-form__subtitle`) Или звоните нам по номеру <a href = 'tel:88312162365'>8 831 216-23-65</a><br> С радостью поможем Вам сделать выбор и определиться с количеством.
+
+                  label(class=`${class_name}-form__label`)
+                    span Ваше имя
+                    input(class=`${class_name}-form__input` type=`text` name = '')
+
+                  label(class=`${class_name}-form__label`)
+                    span Ваш телефон
+                    input(class=`${class_name}-form__input` type=`text` name = '')
+
+                  // - grid в форме
+                  div(class=`${class_name}-form__grid`)
+
+                    div(class=`${class_name}-form-gridl`)
+                        textarea(class=`${class_name}-form__textarea` name = '') Сообщение
+
+                        label(class=`${class_name}-form__label`)
+                            input(class=`${class_name}-form__checkbox` type=`checkbox` name = '')
+                            span(class=`${class_name}-form__checkbox-span`) согласие на обработку персональных данных*
+
+                    div(class=`${class_name}-form-gridr`)
+                        div(class=`${class_name}-form__file-selected`) Файл:
+
+                        label(class=`${class_name}-form__label`)
+                            input(class=`${class_name}-form__checkbox` type=`file` name = '')
+                            span(class=`${class_name}-form__file-span`) Выберите файл
+
+                  button(class=`${class_name}-form__btn` type='submit') Заказать расчёт
+
+            // slider
+            div(class=`${class_name}-img`)
+                img(class=`${class_name}-img__img` src=`/assets/img/window-gilotine/top-section.jpg` alt=`#`)
+

@@ -1,0 +1,166 @@
+.footer {
+	background-color: #f3f2f2;
+	color: #737475;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	&__container {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 52px 15px 0 15px;
+	}
+
+	// footer top
+
+	&__top {
+		display: grid;
+		grid-template-columns: 358px 1fr;
+		gap: 5px;
+		max-width: 1010px;
+		margin-bottom: 30px;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 750px) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+	}
+
+	&__top-info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			z-index: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;
+			background-color: #e93d3d;
+			height: 2px;
+			content: '';
+		}
+
+		@media (max-width: 750px) {
+			justify-content: center;
+			&::before {
+				display: none;
+			}
+		}
+
+	}
+
+	&__top-all {
+		position: relative;
+		z-index: 3;
+		font-size: 18px;
+		color: #e93d3d;
+		font-weight: 600;
+		background-color: #f3f2f2;
+		padding-left: 30px;
+	}
+
+	&__top-sait {
+		position: relative;
+		z-index: 2;
+		color: #000;
+		background-color: #f3f2f2;
+		padding-right: 30px;
+	}
+
+	&__inner {
+		padding-bottom: 80px;
+		display: grid;
+		grid-template-columns: 358px 1fr 1fr 1fr;
+		justify-content: space-between;
+		gap: 5px;
+		line-height: 30px;
+		border-bottom: 3px solid #dcdbdb;
+		@media (max-width: 1050px) {
+			grid-template-columns: 1fr 1fr ;
+			justify-items: center;
+		}
+		@media (max-width: 560px) {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+
+	}
+
+	// левый столбец
+
+	&__info {
+		a{
+			color: #737475;
+		}
+		p:nth-child(2) {
+			margin-bottom: 70px;
+		}
+
+		p:nth-child(3) {
+			margin-bottom: 40px;
+		}
+
+		p:nth-child(4) {
+			margin-bottom: 40px;
+		}
+
+	}
+
+	&__phone-btn {
+		margin-bottom: 30px;
+		display: inline-block;
+		padding: 10px 40px;
+		border-radius: 20px;
+		background-color: rgb(101, 156, 221);
+		color: #fff !important;
+	}
+
+	&__bottom {
+		padding: 35px 0;
+	}
+
+}
+
+// ссылки
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		text-transform: uppercase;
+		color: #262525;
+		font-weight: 700;
+		opacity: 53%;
+	}
+
+	&__link {
+		margin-top: 40px;
+		color: #000;
+	}
+}
+
+// foooter-rights
+.foooter-rights {
+	text-align: center;
+	padding: 25px;
+	background-color: #262626;
+	border-radius: 20px 20px 0 0;
+	color: rgba(255, 255, 255, .5);
+	span {
+		display: inline-block;
+		padding: 0 30px;
+	}
+
+}

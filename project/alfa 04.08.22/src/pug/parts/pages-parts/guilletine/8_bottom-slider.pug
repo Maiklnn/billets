@@ -1,0 +1,20 @@
+- var class_name1 = 'bottom-slider'
+
+
+div(class=`${class_name1}__container`)
+    div(class=`${class_name1} swiper-container`)
+        div(class=`${class_name1}__wrapper swiper-wrapper`)
+            mixin item(img, title, descr)
+                div(class=`${class_name1}-slide swiper-slide`)
+                    div(class=`${class_name1}-slide__content`)
+                        img(class=`` src=`${img}` alt=`#`)
+
+            +item('assets/img/logo/gbs.jpg', '1 слайд', '')
+            +item('assets/img/logo/lukoil.jpg', '1 слайд', '')
+            +item('assets/img/logo/nn.jpg', '1 слайд', '')
+            +item('assets/img/logo/gbs.jpg', '1 слайд', '')
+            +item('assets/img/logo/lukoil.jpg', '1 слайд', '')
+            +item('assets/img/logo/nn.jpg', '1 слайд', '')
+
+
+

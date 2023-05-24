@@ -1,0 +1,142 @@
+// основной блок
+.keys-one {
+	max-width: 1390px;
+	margin: 0 auto 60px auto;
+
+	&__container {
+		background-color: #F4F2F2;
+		max-width: 1390px;
+		padding: 0 15px;
+	}
+
+	// заголовок
+	&__title {
+		margin-bottom: 35px;
+		color: #659cdd;
+		text-align: center;
+		@include adaptiveValue("font-size", 36, 18);
+		font-weight: bold;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+		color: #9e9fa4;
+
+	}
+
+	&__grid {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 65px 0 35px 0;
+		// @include adaptiveValue("padding-top", 65, 10);
+		// @include adaptiveValue("padding-bottom", 65, 10);
+		// @include adaptiveValue("padding-left", 115, 0);
+		// @include adaptiveValue("padding-right", 140, 0);
+		display: grid;
+		grid-template-columns:  percent(587, 1170) 1fr;
+		gap: 70px;
+		justify-items: center;
+		@media screen and (max-width: 1000px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+// Блок desription
+.keys-one-descr {
+	padding: 0;
+	p {
+		max-width: 450px;
+		line-height: 24px;
+		padding-bottom: 50px;
+	}
+	&__bottom p {
+		padding-bottom: 0;
+	}
+
+
+	h3 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: bold;
+		color: #282828;
+		margin-bottom: 25px;
+	}
+
+	&__top {
+		&--keys2 {
+			p {
+				padding-bottom: 30px;
+				margin: 0;
+			}
+		}
+	}
+
+	&__bottom {
+
+	}
+
+
+}
+
+// Блок c картинкой
+.keys-one-img {
+	position: relative;
+	max-height: 472px;
+	padding-bottom: 50px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		transform: translateY(50%);
+		display: flex;
+		justify-content: center;
+	}
+
+	&__text {
+		display: flex;
+		@include adaptiveValue("padding-top", 23, 10);
+		@include adaptiveValue("padding-bottom", 23, 10);
+		@include adaptiveValue("padding-left", 50, 18);
+		@include adaptiveValue("padding-right", 50, 10);
+		background-color: #DCE6F0;
+		max-width: 480px;
+		border-radius: 5px;
+		position: relative;
+		@include adaptiveValue("font-size", 16, 12);
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 5px;
+			display: block;
+			width: 10px;
+			height: 100%;
+			background-color: rgb(233, 61, 61);
+			content: '';
+		}
+		//@media (max-width: 1150px) {
+		//	display: none;
+		//}
+	}
+
+	&-slide {
+		position: relative;
+	}
+
+
+
+}
+

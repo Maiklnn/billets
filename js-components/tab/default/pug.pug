@@ -1,0 +1,23 @@
+- var class_name = 'main-tab'
+section(class=`${class_name}`)
+    div(class=`${class_name}__container`)
+
+        div(class=`title`) Популярные модели деревянных окон
+
+        div(class=`tab`)
+
+            div(class=`${class_name}__nav tab__nav`)
+                a(class=`${class_name}__link tab__link tab__link--active` href = '#') 1
+                a(class=`${class_name}__link tab__link` href = '#') 2
+                a(class=`${class_name}__link tab__link` href = '#') 3
+
+            //- tabs__content
+            div(class=`${class_name}__content tabs__content` )
+
+                //- контент первого таба
+                div(class=`tab__content-item tab__content-item--active`) 1
+
+                div(class=`tab__content-item tab__content-item`) 2
+
+                div(class=`tab__content-item tab__content-item`) 3
+

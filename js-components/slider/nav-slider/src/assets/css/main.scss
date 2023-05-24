@@ -1,0 +1,46 @@
+// swiper default
+.swiper {
+	&-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+	}
+
+	&-slide {
+		flex-shrink: 0;
+	}
+}
+
+
+// page-map-slider
+.page-map-slider {
+	// main
+	&-main {
+		// slide
+		&-slide {
+			background-color: #0f66dc;
+			height: 300px;
+
+		}
+	}
+
+	&-nav {
+		outline: 1px solid green;
+		display: flex;
+		overflow: hidden;
+		//slide
+		&-slide {
+			width: 100px !important;
+			height: 100px;
+			outline: 1px solid red;
+		}
+	}
+
+}
+
+

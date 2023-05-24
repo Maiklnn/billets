@@ -1,0 +1,14 @@
+// screen-name
+.screen-name {
+	background: url("../gulp-pack/src/assets/images/front-page/bg-form.jpg") center center/cover no-repeat;
+	[class*="__container"] {
+	}
+
+	// обёртка
+	&-inner {
+		&__title {
+
+		}
+	}
+
+}

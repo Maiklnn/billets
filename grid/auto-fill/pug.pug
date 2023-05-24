@@ -1,0 +1,15 @@
+//- 6 ряд логотипы
+- var row = `${class_name}-row6`
+div(class=`${row} ${row}__container`)
+    div(class=`${row}__list`)
+
+        //- item
+        - var item = `${row}__list-item`
+        mixin item(img,name,descr)
+            a(class=`${item}` href='')
+                img(src=`assets/img/main/partners/${img}` alt=`#`)
+
+        +item('1.jpg')
+        +item('2.jpg')
+        +item('3.jpg')
+        +item('4.jpg')

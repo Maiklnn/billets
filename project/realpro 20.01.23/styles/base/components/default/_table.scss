@@ -1,0 +1,17 @@
+  table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 10px 10px 25px 10px;
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+  thead td {
+    font-family: 'Semibold';
+    font-weight: 700;
+    color: #fff;
+    background: $main-color;
+    padding: 10px;
+  }

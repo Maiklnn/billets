@@ -1,0 +1,21 @@
+// block
+.main-advantages {
+
+	&__row {
+		position: relative;
+		display: grid;
+		grid-template-columns: auto percent(760, 1920);
+		padding-left: calc((100% - 1400px + 30px) / 2);
+
+		&-left {
+			outline: 1px solid red;
+
+		}
+
+		&-right {
+			outline: 1px solid red;
+
+		}
+	}
+
+}

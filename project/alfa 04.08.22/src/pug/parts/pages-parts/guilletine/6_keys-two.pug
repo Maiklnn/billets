@@ -1,0 +1,54 @@
+- var class_name = 'keys-one'
+
+section(class=`${class_name}`)
+    div(class=`${class_name}__subtitle`) Наши проекты
+    div(class=`${class_name}__title`) Ресторан "Роберто", Москва
+
+    //-- container
+    div(class=`${class_name}__container`)
+
+
+
+
+        //-- grid-top
+        div(class=`${class_name}__grid`)
+
+            //-- slider project
+            div(class=`${class_name}-img sliders-keys swiper-container`)
+                div(class=`${class_name}-img__wrapper swiper-wrapper`)
+
+                    mixin item(img, title, descr)
+
+                        div(class=`${class_name}-img-slide swiper-slide`)
+
+                            img(class=`${class_name}-img__img` src=`/assets/img/window-gilotine/keys2.jpg` alt=`#`)
+
+                            div(class=`${class_name}-img__info`)
+                                div(class=`${class_name}-img__text`) А звуки и запахи вкусной выпечки привлекают проходящих по улице людей
+
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                    +item('/assets/img/window-gilotine/window-gilotine.jpg', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+
+
+
+
+            //- description
+            div(class=`${class_name}-descr`)
+                div(class=`${class_name}-descr__top` class=`${class_name}-descr__top--keys2`)
+                    h3 Было
+                    p Было 5 окон ПВХ, не открывающихся
+                    h3 Реализация
+                    p Мы установили окна-гильотины с мультифункциональным стеклопакетом
+                    p Окна открываются и закрываются с помощью электропривода. Если погода на улице портится, окно легко закрыть, не потревожив гостей
+                    p Столики в ресторане стоят прямо около окна, посетители могут наслаждаться видом и хорошей погодой.
+                    p Окна выглядят аккуратно и стильно, рамы покрашены в цвет деталей фасада
+
+
+
+
+
+
+
+

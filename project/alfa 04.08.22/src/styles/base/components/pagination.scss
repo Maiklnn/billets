@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+
+  &__arrows {
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+      position: absolute;
+      top: 8px;
+      width: 5px;
+      height: 10px;
+      content: '';
+    }
+  }
+  &__prev {
+    padding-left: 15px;
+    &::before {
+      left: 0;
+      background: url("../img/icons/pagination-arrow.svg");
+
+    }
+  }
+  &__next {
+    padding-right: 15px;
+    &::before {
+      right: 0;
+      background: url("../img/icons/pagination-arrow.svg");
+      transform: rotate(180deg);
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  &__link {
+  }
+
+  &--active {
+    color: $accent;
+  }
+
+}

@@ -1,0 +1,34 @@
+.container
+    .table--responsive
+        table.table
+            thead
+                tr
+                    th #
+                    th Фамилия
+                    th Имя
+                    th Дата
+                    th Е mail
+                    th Телефон
+                    th Страна
+                    th Город
+                    th Код
+            tbody
+                mixin item(question, answer, active)
+                    tr
+                        td  1
+                        td  Фамилия
+                        td  Имя
+                        td  Дата
+                        td  Е mail
+                        td  Телефон
+                        td  Страна
+                        td  Город
+                        td  Город
+
+                +item('Вопрос', 'Ответ', 'open')
+                +item('Вопрос', 'Ответ', '')
+                +item('Вопрос', 'Ответ', '')
+                +item('Вопрос', 'Ответ', '')
+                +item('Вопрос', 'Ответ', '')
+                +item('Вопрос', 'Ответ', '')
+                +item('Вопрос', 'Ответ', '')

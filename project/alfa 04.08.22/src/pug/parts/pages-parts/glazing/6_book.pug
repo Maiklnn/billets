@@ -1,0 +1,36 @@
+- var class_name = 'gelatin-window'
+a(name=`two`)
+section(class=`${class_name} ${class_name}--mb10`)
+        //-- grid-top
+        div(class=`${class_name}__grid ${class_name}__grid--1fr1fr`)
+
+            //-- slider
+            div(class=`${class_name}-slaider`)
+                - var class_name1 = 'book-slider'
+                div(class=`${class_name1} swiper-container`)
+                    div(class=`${class_name1}__wrapper swiper-wrapper`)
+                        mixin item(img, title, descr)
+                            div(class=`${class_name1}-slide swiper-slide`)
+                                img(class=`` src=`${img}` alt=`#`)
+
+                        +item('/assets/img/page2/book.jpg', '1 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/page2/book.jpg', '2 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+                        +item('/assets/img/page2/book.jpg', '3 слайд', 'Одна из наиболее динамично развихся компаний в сфере торговли')
+
+            //- description
+            div(class=`${class_name}-descr`)
+                div(class=`${class_name}-descr__title`) Книжка
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 9.8 мм
+                    div(class=`${class_name}-descr__item-descr`) <strong>Пространство пола без помех -</strong> заниженный нижний направляющий профиль от 9,8 мм, возможность заглубленного монтажа направляющих профилей
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 8, 10 <br> 12 мм
+                    div(class=`${class_name}-descr__item-descr`) <strong>Звысота панели до 3100 мм, стекло закаленное<br> 8,10,12 мм</strong>
+
+                div(class=`${class_name}-descr__item`)
+                    div(class=`${class_name}-descr__item-num`) 500 <br> 1 000
+                    div(class=`${class_name}-descr__item-descr`) <strong>Легко и безопасно пользоваться -<br> ширина панели 500-1000 мм</strong>
+
+                a(class=`${class_name}-descr__link` href = '#form') Заказать расчёт

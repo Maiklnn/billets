@@ -1,0 +1,24 @@
+// ряд 6 партнёры
+&-row6 {
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 265px);
+		justify-content: space-between;
+
+		// item
+		&-item {
+			outline: 1px solid red;
+			&__img {
+
+			}
+			&__name {
+			}
+
+
+			&:hover {
+			}
+
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.tab {
+	&__nav {
+
+	}
+
+	&__link:hover {
+		opacity: .7
+	}
+
+	&__link--active {
+		color: $accent;
+	}
+	&__content-item {
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: all 1s
+	}
+
+	&__content-item--active {
+		height: auto;
+		opacity: 1;
+		overflow: visible
+	}
+
+}

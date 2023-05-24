@@ -1,0 +1,26 @@
+//- name-slider
+- var class_slider = 'name-slider'
+
+div(class=`${class_slider} swiper-container`)
+    div(class=`${class_slider}__wrapper swiper-wrapper`)
+
+
+        mixin item(img, title, descr)
+            div(class=`${class_slider}-slide swiper-slide`)
+                div(class=`${class_slider}-slide__title`)= title
+
+
+
+        +item('assets/img/home/specification-slider/icon1.png', '1 слайд', '')
+        +item('assets/img/home/specification-slider/icon2.png', '2 слайд', '')
+        +item('assets/img/home/specification-slider/icon3.png', '3 слайд', '')
+        +item('assets/img/home/specification-slider/icon3.png', '4 слайд', '')
+        +item('assets/img/home/specification-slider/icon3.png', '5 слайд', '')
+        +item('assets/img/home/specification-slider/icon3.png', '6 слайд', '')
+        +item('assets/img/home/specification-slider/icon3.png', '7 слайд', '')
+
+    div(class=`${class_slider}-pagination`)
+
+    div(class=`${class_slider}-navigation`)
+        div(class=`${class_slider}-navigation__prev`)
+        div(class=`${class_slider}-navigation__next`)

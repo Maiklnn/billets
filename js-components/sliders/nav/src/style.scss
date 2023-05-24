@@ -1,0 +1,94 @@
+
+.main-video {
+	max-width: 597px;
+	margin: 0 auto;
+
+	// default
+	.swiper {
+		&-container {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		&-wrapper {
+			display: flex;
+			width: 100%;
+		}
+
+		&-slide {
+			flex-shrink: 0;
+		}
+	}
+
+	// nav
+	.slider-nav {
+		margin-bottom: 30px;
+		// slide
+		&-slide {
+			width: 100px !important;
+			height: 100px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+
+			}
+		}
+	}
+
+	// slider
+	.presentation-slider {
+		// slide
+		&-slide {
+			height: 500px;
+			img {
+				object-fit: cover;
+				max-width: 100%;
+				height: 100%;
+			}
+		}
+
+
+		// pagination arr
+		&-navigation {
+			display: flex;
+			justify-content: space-between;
+			// arr
+			&__prev, &__next {
+				background-color: #1b4da9;
+				border-radius: 100%;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&::before {
+					width: 15px;
+					height: 15px;
+					border-bottom: 1px solid red;
+					border-left: 1px solid red;
+					content: '';
+					transform: rotate(45deg);
+				}
+
+
+
+				// если далее нету слайдов
+				&.swiper-button-disabled,
+				&.swiper-button-disabled {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			&__next {
+				&::before {
+					transform: rotate(-130deg);
+				}
+			}
+		}
+	}
+
+}
