@@ -1,0 +1,24 @@
+- var class_name = 'header'
+header(class=`${class_name}` style='background: url("../custom/my/assets/img/bg-head-page.jpg") center center/cover no-repeat;')
+	//- line
+	div(class=`${class_name}__line` data-da = 'nav-header, last, 991')
+		div(class=`${class_name}__container`)
+			div(class=`${class_name}__line-address`) Москва, Большая Очаковская улица, 47а ст1
+			div(class=`${class_name}__line-russia`)  Работаем по всей России
+			a(class=`${class_name}__line-email` href="mailto:INFO@GUGOS.RU") INFO@GUGOS.RU
+			div(class=`${class_name}__line-sohial` )
+				div(class=`${class_name}__line-sohial-item`)
+				div(class=`${class_name}__line-sohial-item`)
+				div(class=`${class_name}__line-sohial-item`)
+	//- subheader
+	div(class=`${class_name}__subheader`)
+		div(class=`${class_name}__container`)
+			a(class=`${class_name}__subheader-logo` href='')
+				img(src='custom/my/assets/img/front-new/logo.png' alt=`#`)
+
+			div(class=`${class_name}__subheader-descr`) Строительство габрионов терас, пирсов и берегоукрепление
+			a(class=`${class_name}__subheader-phone` data-da = 'nav-header, last, 991' href='tel:+74952555549') +7 495 255 55 49 <span> горячая линия</span>
+			div(class=`${class_name}__subheader-btns`)
+				button(class=`${class_name}__subheader-btns-phone`)
+				button(class=`${class_name}__subheader-btns-btn` data-path="two-dom") Перезвонить Вам?
+	include nav

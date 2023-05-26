@@ -1,0 +1,60 @@
+- var class_name = 'header'
+header(class=`${class_name}`)
+	//- line
+	div(class=`${class_name}__line` data-da = 'nav-header, last, 991')
+		div(class=`${class_name}__container`)
+			div(class=`${class_name}__line-address`) Москва, Большая Очаковская улица, 47а ст1
+			div(class=`${class_name}__line-russia`)  Работаем по всей России
+			a(class=`${class_name}__line-email` href="mailto:INFO@GUGOS.RU") INFO@GUGOS.RU
+			div(class=`${class_name}__line-sohial` )
+				div(class=`${class_name}__line-sohial-item`)
+				div(class=`${class_name}__line-sohial-item`)
+				div(class=`${class_name}__line-sohial-item`)
+
+
+	//- subheader
+	div(class=`${class_name}__subheader`)
+		div(class=`${class_name}__container`)
+			a(class=`${class_name}__subheader-logo` href='')
+				img(src='/custom/my/assets/img/front-new/logo.png' alt=`#`)
+
+			div(class=`${class_name}__subheader-descr`) Строительство габрионов терас, пирсов и берегоукрепление
+			a(class=`${class_name}__subheader-phone` data-da = 'nav-header, last, 991' href='tel:+74952555549') +7 495 255 55 49 <span> горячая линия</span>
+			div(class=`${class_name}__subheader-btns`)
+				button(class=`${class_name}__subheader-btns-phone`)
+				button(class=`${class_name}__subheader-btns-btn` data-path="two-dom") Перезвонить Вам?
+
+	//- menu
+	include nav
+
+
+
+
+	//- body
+	div(class=`${class_name}__body container`)
+
+		//- left
+		div(class=`${class_name}__body-left`)
+			h1(class=`${class_name}__body-left-title`) Мы <br> укрепляем <br> берега, <span class = 'header__body-left-title-create'><p>создаём водоёмы</p></span> <span class = 'header__body-left-title-russia'>по всей России!</span>
+
+
+
+
+		//- right
+		div(class=`${class_name}__body-right`)
+			- var class_form = `${class_name}-form`
+			form(class=`${class_form}`)
+				div(class=`${class_form}__description`) Получите скидку и консультацию по всем вопросам. Перезвоним через 2 минуты.
+				div(class=`${class_form}__title`) -17%<br> при заказе сегодня
+
+				.placeholder-container.placeholder-container__input
+					input(class=`_necessarily` type=`text` name="nameUser")
+					div(class='caption') Имя
+
+				.placeholder-container.placeholder-container__input
+					input(class=`_necessarily` type="tel" data-mask="tel" name="phoneUser")
+					div(class='caption') Телефон
+
+				button(class='main-btn' data-value='target=123::title=Заголовок' name="dataForm" data-form = 'true') Получить 17%
+
+

@@ -1,0 +1,110 @@
+- var class_name = 'footer'
+footer(class=`${class_name}`)
+	//- ряд
+	div(class=`${class_name}__row-1 container`)
+
+		//- left
+		div(class=`${class_name}__row-1-coll`)
+			img(class='logo' src='custom/my/assets/img/front-new/logo.png' alt=`#`)
+
+			p.text Ремонт. Строительство. Благоустройство
+
+			a(class=`phone` href='tel:+74952555549') +7 495 255 55 49 <span>Горячая линия</span>
+
+			div(class=`contacts`) 119361, г. Москва, Большая Очаковская улица, 47а ст1 <br> режим работы с 08:00 до 18:00
+
+			a(class=`email` href='mail:info@gugos.ru') info@gugos.ru
+
+
+			div(class=`sohial`)
+				a(class=`sohial__link` href = '/')
+				a(class=`sohial__link` href = '/')
+				a(class=`sohial__link` href = '/')
+
+
+
+
+
+
+
+		//- nav
+		nav(class=`${class_name}__row-1-nav`)
+			h3 Услуги
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Акции','')
+				+item('Наши работы (фото)','')
+				+item('Видео','')
+				+item('О компании','')
+				+item('Сколько стоит?','')
+				+item('Контакты','')
+
+			button(class='btn' data-path="two-dom") Перезвонить вам?
+
+
+		//- nav
+		nav(class=`${class_name}__row-1-nav`)
+			h3 Услуги
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Габионы','')
+				+item('Берегоукрепления','')
+				+item('Строительство','')
+				+item('Терассы','')
+				+item('Детское и парковое оборудование','')
+				+item('Дизайн','')
+
+
+		//- nav
+		nav(class=`${class_name}__row-1-nav`)
+			h3 Проект
+			ul
+				mixin item(name,active)
+					li(class=`${class_name}__row-1-nav-li`)
+						a(class=`${class_name}__row-1-nav-link` href="/")= name
+				+item('Ремонт под ключ','')
+				+item('Проэктирование','')
+				+item('Укрепление','')
+				+item('Инженереые работы','')
+
+
+	//- ряд
+	div(class=`${class_name}__row-2`) © 2012 - 2023 Gugos
+
+// Модальные окна
+div(class="modal-popup " data-close="two" data-target="two")
+	div(class="modal-popup__close" data-close="two") ×
+	div(class="modal-popup__container fadeInUp modal-popup-open animate-open")
+		form(class="form-modal")
+			h2(class="form-modal__title") Перезвонить нам?
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="text" name="nameUser")
+				div(class="caption") имя
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="tel" data-mask="tel" name="phoneUser")
+				div(class="caption") Телефон
+
+			button(class="btn" data-form="true") Отправить
+
+div(class="modal-popup" data-close="one" data-target="one")
+	div(class="modal-popup__close" data-close="one") ×
+	div(class="modal-popup__container fadeInUp modal-popup-open animate-open")
+		form(class="form-modal")
+			h2(class="form-modal__title") Заказать
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="text" name="nameUser")
+				div(class="caption") имя
+
+			div(class="placeholder-container placeholder-container__input")
+				input(class="_necessarily" type="tel" data-mask="tel" name="phoneUser")
+				div(class="caption") Телефон
+
+			button(class="btn" data-form="true") Отправить
+
